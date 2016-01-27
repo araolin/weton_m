@@ -3,7 +3,7 @@
 html.hairlines *{border-width:.5px !important;}
 /** 全局reset **/
 body,header,footer,section,div,span,p,img,a,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,em,i,b,u,del,menu,nav,fieldset,legend,article,aside,details,figcaption,hgroup,pre,code,from,blockquote,th,td,tr,hr,table,img,figure,button,input,textarea{padding:0;margin:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);font-family:Microsoft Yahei,Helvetica,Arial;}
-body{background-color:#fff;}
+body{background-color:#f2f2f2;}
 /* webkit引擎的浏览器取消默认样式(-webkit-appearance) */
 input,textarea{-webkit-user-select:auto !important;user-select:auto !important;/*-webkit-appearance:none;*/}
 :focus{outline:none;}
@@ -22,6 +22,21 @@ input[type="submit"],input[type="reset"],input[type="button"],input[type="passwo
 html,body{font-size:20px;}
 @media only screen and (min-width:640px){
     html,body{font-size:40px;}
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.comm_btn a{
+    line-height: 1.5rem;
+    padding: .25rem 0;
+    text-align: center;
+    color: #fff;
+    display: block;
+    background-color: #353b4b;
+    border: .05rem solid #3b404c;
 }
 .clear:after {clear: both;display: table;content: " "}
 /* iconfont css */
@@ -90,6 +105,32 @@ html,body{font-size:20px;}
     height: 1.2rem;
     border-radius: 1.2rem;
 }
+.header .back{
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    height:2.2rem;
+    padding-left:1.5rem;
+    background:url(../images/back.png) no-repeat .75rem center;
+    background-size:auto .75rem;
+    font-size:0;
+    width:.5rem;
+    overflow:hidden;
+    text-indent:-999rem;
+}
+.header h1 {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: static;
+    height: 2.2rem;
+    line-height: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: normal;
+    padding: 0 2rem;
+}
+/*END 头部css*/
 
 /* 底部导航 */
 .menu { background:#fff;position:fixed;z-index:9999; bottom:0; height:2.2rem;left:0; right:0; margin:0 auto;}
@@ -115,6 +156,9 @@ html,body{font-size:20px;}
 }
 
 /*登陆页*/
+.login{
+    background-color: #fff;
+}
 .login header{
     height: 8.625rem;
     background: url("../images/login_banner.png") center #353b4b no-repeat;
@@ -166,12 +210,6 @@ html,body{font-size:20px;}
 .login_item3 .login_btn a{
     width: 11.9rem;
     height: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    color: #fff;
-    display: block;
-    background-color: #353b4b;
-    border: .05rem solid #3b404c;
 }
 .login_footer{
     font-size: .65rem;
@@ -181,10 +219,80 @@ html,body{font-size:20px;}
 /*END 登陆页*/
 
 /* 首页功能区 */
-.index{background: #353b4b;}
-.index-nav {background-color: #353b4b;box-sizing: border-box;-webkit-box-sizing: border-box;}
-.index-nav li{float: left;width: 33.33%;height: 3.4rem;color: #fff;margin-top: 1rem}
-.index-nav li a{display: block;}
-.index-nav li em{display: block;text-align: center;height: 2.5rem;width: 2.5rem;line-height:2.5rem;font-size: 1.65rem;margin: .5rem auto;border-radius:2.5rem;border: .05rem solid #fff;}
-.index-nav li span{display: block;font-size: .55rem;text-align: center;}
+.index{
+    background: #353b4b;
+}
+.index-nav {
+    background-color: #353b4b;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+.index-nav li{
+    float: left;
+    width: 33.33%;
+    color: #fff;
+    margin-top: .5rem
+}
+.index-nav li a{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center
+}
+.index-nav li em{
+    display: block;
+    text-align: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height:2.5rem;
+    font-size: 1.65rem;
+    margin: .5rem auto;
+    border-radius:2.5rem;
+    border: .05rem solid #fff
+}
+.index-nav li span{
+    display: block;
+    font-size: .55rem;
+    text-align: center
+}
+.index-nav li .badge{
+    position: absolute;
+    top: .5rem;
+    right: 22%;
+    display: inline-block;
+    min-width: .8rem;
+    height: .8rem;
+    border-radius: .4rem;
+    padding: 0 .05rem;
+    background-color: #fe463c;
+    line-height: .8rem;
+    font-size: .6rem;
+    color: #fff;
+}
 /* END 首页功能区 */
+
+/* 详情列表 */
+dl.common_list{
+    margin:1rem 1.2rem 0 1.2rem;
+    font-size: .7rem;
+}
+.common_list dt{
+    border-left: .05rem solid #7aca48;
+    font-size: .8rem;
+    color: #7aca48;
+    padding-left: .55rem;
+}
+.common_list dd{
+    text-align: right;
+    margin-top: .6rem;
+    padding: .5rem;
+}
+.common_list dd:nth-child(even){
+    background-color: #fff;
+}
+.common_list dd .fr{
+    color: #888;
+}
+.common_list .comm_btn{
+    margin-top: 1rem;
+}
