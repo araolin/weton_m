@@ -38,6 +38,9 @@ html,body{font-size:20px;}
     background-color: #353b4b;
     border: .05rem solid #3b404c;
 }
+.text-right{
+    text-align: right!important;;
+}
 .clear:after {clear: both;display: table;content: " "}
 /* iconfont css */
 @font-face {
@@ -273,10 +276,10 @@ html,body{font-size:20px;}
 
 /* 详情列表 */
 dl.common_list{
-    margin:1rem 1.2rem 0 1.2rem;
+    margin:1rem .8rem 0 .8rem;
     font-size: .7rem;
 }
-.common_list dt{
+.common_list dt,.box_t h3{
     border-left: .05rem solid #7aca48;
     font-size: .8rem;
     color: #7aca48;
@@ -295,4 +298,58 @@ dl.common_list{
 }
 .common_list .comm_btn{
     margin-top: 1rem;
+}
+/*END 详情列表*/
+
+/*搜索框*/
+.search_box{
+    height: 1.2rem;
+}
+.search_box input{
+    font-size: .5rem;
+    line-height: 1.2rem;
+    height: 1.1rem;
+    width: 4rem;
+    color: #fff;
+    background-color: #353b4b;
+    border: .05rem solid #fff;
+    border-right: none;
+    padding-left: .25rem;
+}
+.search_box button{
+    font-size: .7rem;
+    line-height: 1rem;
+    height: 1.2rem;
+    width: 2rem;
+    border: .05rem solid #fff;
+    background-color: #5fbd21;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*END 搜索框*/
+
+/*表格*/
+.box_c .table {
+    color: #666;
+    font-size: .6rem;
+    width: 100%;
+    margin-top: .8rem;
+    border-collapse:collapse;
+}
+.box_c .table th{
+    text-align: left;
+    font-size: .7rem;
+    color: #7aca48;
+    font-weight: normal;
+}
+.box_c thead th,.box_c tbody td{
+    padding: .5rem;
+}
+.box_c tbody tr:nth-child(odd){
+    background: #fff;
+}
+/*账号管理*/
+.users{
+    margin: 1rem .8rem 0;
 }
