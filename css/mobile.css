@@ -296,6 +296,13 @@ dl.common_list{
 .common_list dd .fr{
     color: #888;
 }
+.common_list dd li{
+    height: 1rem;
+    margin-bottom: .75rem;
+}
+.common_list dd li:nth-last-child(1){
+    margin-bottom: 0;
+}
 .common_list .comm_btn{
     margin-top: 1rem;
 }
