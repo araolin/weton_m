@@ -29,6 +29,9 @@ html,body{font-size:20px;}
 .fr{
     float: right;
 }
+.mt_05{
+    margin-top: .5rem;
+}
 .comm_btn a{
     line-height: 1.5rem;
     padding: .25rem 0;
@@ -37,6 +40,15 @@ html,body{font-size:20px;}
     display: block;
     background-color: #353b4b;
     border: .05rem solid #3b404c;
+}
+.null_btn a{
+    line-height: 1.5rem;
+    padding: .25rem 0;
+    text-align: center;
+    color: #333;
+    display: block;
+    background-color: #f7f7f7;
+    border: .05rem solid #dddddd;
 }
 .text-right{
     text-align: right!important;;
@@ -275,11 +287,11 @@ html,body{font-size:20px;}
 /* END 首页功能区 */
 
 /* 详情列表 */
-dl.common_list{
+dl.common_list,dl.form_list{
     margin:1rem .8rem 0 .8rem;
     font-size: .7rem;
 }
-.common_list dt,.box_t h3{
+.common_list dt,.box_t h3,.form_list dt{
     border-left: .05rem solid #7aca48;
     font-size: .8rem;
     color: #7aca48;
@@ -298,7 +310,7 @@ dl.common_list{
 }
 .common_list dd li{
     height: 1rem;
-    margin-bottom: .75rem;
+    margin-bottom: 1rem;
 }
 .common_list dd li:nth-last-child(1){
     margin-bottom: 0;
@@ -307,6 +319,52 @@ dl.common_list{
     margin-top: 1rem;
 }
 /*END 详情列表*/
+
+
+/*表单列表*/
+.form_list dd{
+    text-align: left!important;
+}
+.form_list label {
+    display: block;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: .5rem 0;
+    width: 100%;
+}
+.form_list label span {
+    display: inline-block;
+    width: 27.5%;
+    text-align: right;
+    float: left;
+}
+.form_list input[type="text"]{
+    background: #fff;
+    display: inline-block;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 0 0 .5rem;
+    padding-left: .5rem;
+    font-size: .6rem;
+    width: 55%;
+    border: 1px solid #ececec;
+}
+.form_list select {
+    color: #686868;
+    display: inline-block;
+    float: left;
+    font-size: .75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 0 0 .5rem;
+    padding-left: .5rem;
+    width: 55%;
+    border: 1px solid #ececec;
+}
+
+
+
+/*END 表单列表*/
 
 /*搜索框*/
 .search_box{
@@ -319,7 +377,7 @@ dl.common_list{
     width: 4rem;
     color: #fff;
     background-color: #353b4b;
-    border: .05rem solid #fff;
+    border: .05rem solid #353b4b;
     border-right: none;
     padding-left: .25rem;
 }
@@ -328,7 +386,7 @@ dl.common_list{
     line-height: 1rem;
     height: 1.2rem;
     width: 2rem;
-    border: .05rem solid #fff;
+    border: .05rem solid #5fbd21;
     background-color: #5fbd21;
     color: #fff;
     cursor: pointer;
@@ -337,6 +395,16 @@ dl.common_list{
 /*END 搜索框*/
 
 /*表格*/
+.box_t_btn{
+    font-size: .6rem;
+    color: #353b4b;
+    height: 1.1rem;
+    line-height: 1.2rem;
+    padding:  0 .5rem;
+    border: .05rem solid #353b4b;
+    border-radius: .25rem;
+    margin-left: .75rem;
+}
 .box_c .table {
     color: #666;
     font-size: .6rem;
@@ -357,6 +425,20 @@ dl.common_list{
     background: #fff;
 }
 /*账号管理*/
-.users{
+.users,.crm{
     margin: 1rem .8rem 0;
 }
+/*END 账号管理*/
+
+/*报价单*/
+.quotation td{
+    font-size: .6rem!important;
+}
+.quotation td a{
+    font-size: .7rem!important;
+}
+/*END 报价单*/
+
+/*发货单*/
+
+/*END 发货单*/
