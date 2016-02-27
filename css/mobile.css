@@ -32,6 +32,9 @@ html,body{font-size:20px;}
 .mt_05{
     margin-top: .5rem;
 }
+.mt_1{
+    margin-top: 1rem;
+}
 .comm_btn a{
     line-height: 1.5rem;
     padding: .25rem 0;
@@ -49,6 +52,14 @@ html,body{font-size:20px;}
     display: block;
     background-color: #f7f7f7;
     border: .05rem solid #dddddd;
+}
+.more_btn a{
+    line-height: 1.5rem;
+    padding: .25rem 0;
+    text-align: center;
+    color: #333;
+    display: block;
+    font-size: .6rem;
 }
 .text-right{
     text-align: right!important;;
