@@ -439,6 +439,47 @@ dl.common_list,dl.form_list{
 }
 /*END 报价单*/
 
+/*生产单*/
+.manufacture_item{
+    font-size: .6rem;
+    color: #666;
+    margin-top: .5rem;
+    background-color: #fff;
+}
+.mf_item_h{
+    padding: .5rem .5rem;
+    border-bottom: .05rem solid #353b4b;
+}
+.mf_item_c{
+    padding: .8rem .5rem;
+}
+.mf_images img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.mf_info{
+    padding-left:.5rem;
+}
+.mf_v{
+    text-align: right;
+    font-size: 1.5rem;
+    color: #666666;
+}
+#dt_menu{
+    cursor: pointer;
+}
+.dt_menu{
+    margin-top: .5rem;
+    background-color: #7aca48;
+    padding: .5rem;
+}
+.dt_menu li{
+    padding: .25rem 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*END 生产单*/
+
 /*发货单*/
 
 /*END 发货单*/
