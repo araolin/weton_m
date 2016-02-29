@@ -349,7 +349,7 @@ dl.common_list,dl.form_list{
     text-align: right;
     float: left;
 }
-.form_list input[type="text"]{
+.form_list input[type="text"],.form_list input[type="password"]{
     background: #fff;
     display: inline-block;
     height: 1.5rem;
