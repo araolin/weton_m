@@ -359,6 +359,7 @@ dl.common_list,dl.form_list{
     font-size: .6rem;
     width: 55%;
     border: 1px solid #ececec;
+    box-sizing: border-box;
 }
 .form_list select {
     color: #686868;
@@ -371,6 +372,7 @@ dl.common_list,dl.form_list{
     padding-left: .5rem;
     width: 55%;
     border: 1px solid #ececec;
+    box-sizing: border-box;
 }
 
 
