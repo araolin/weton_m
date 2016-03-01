@@ -304,7 +304,7 @@ dl.common_list,dl.form_list{
 }
 .common_list dt,.box_t h3,.form_list dt{
     border-left: .05rem solid #7aca48;
-    font-size: .8rem;
+    font-size: .7rem;
     color: #7aca48;
     padding-left: .55rem;
 }
@@ -387,18 +387,24 @@ dl.common_list,dl.form_list{
     font-size: .5rem;
     line-height: 1.2rem;
     height: 1.1rem;
-    width: 4rem;
+    width: 3.75rem;
     color: #fff;
     background-color: #353b4b;
     border: .05rem solid #353b4b;
     border-right: none;
     padding-left: .25rem;
 }
+/* 通用 */
+.search_box input::-webkit-input-placeholder { font-size: .6rem!important; }
+.search_box input::-moz-placeholder { font-size: .6rem; } /* firefox 19+ */
+.search_box input:-ms-input-placeholder { font-size: .6rem; } /* ie */
+.search_box input:-moz-placeholder { font-size: .6rem; }
+
 .search_box button{
     font-size: .7rem;
     line-height: 1rem;
     height: 1.2rem;
-    width: 2rem;
+    width: 1.5rem;
     border: .05rem solid #5fbd21;
     background-color: #5fbd21;
     color: #fff;
@@ -413,10 +419,10 @@ dl.common_list,dl.form_list{
     color: #353b4b;
     height: 1.1rem;
     line-height: 1.2rem;
-    padding:  0 .5rem;
+    padding:  0 .25rem;
     border: .05rem solid #353b4b;
     border-radius: .25rem;
-    margin-left: .75rem;
+    margin-left: .35rem;
 }
 .box_c .table {
     color: #666;
