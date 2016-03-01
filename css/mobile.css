@@ -35,6 +35,9 @@ html,body{font-size:20px;}
 .mt_1{
     margin-top: 1rem;
 }
+.bg_white{
+    background-color: #ffffff;
+}
 .comm_btn a{
     line-height: 1.5rem;
     padding: .25rem 0;
@@ -428,7 +431,6 @@ dl.common_list,dl.form_list{
     color: #666;
     font-size: .6rem;
     width: 100%;
-    margin-top: .8rem;
     border-collapse:collapse;
 }
 .box_c .table th{
@@ -459,13 +461,13 @@ dl.common_list,dl.form_list{
 /*END 报价单*/
 
 /*生产单*/
-.manufacture_item{
+.manufacture_item,.quotation_item{
     font-size: .6rem;
     color: #666;
     margin-top: .5rem;
     background-color: #fff;
 }
-.mf_item_h{
+.mf_item_h,.quotation_item_h{
     padding: .5rem .5rem;
     border-bottom: .05rem solid #353b4b;
 }
