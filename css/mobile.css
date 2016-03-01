@@ -505,6 +505,12 @@ dl.common_list,dl.form_list{
 }
 /*END 生产单*/
 
-/*发货单*/
-
-/*END 发货单*/
+.list_tips{
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 2rem;
+    color: #353b4b;
+}
+.list_tips .icon{
+    padding-right: .35rem;
+}
