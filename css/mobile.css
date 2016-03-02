@@ -382,7 +382,15 @@ dl.common_list,dl.form_list{
     box-sizing: border-box;
 }
 
-
+.list_tips{
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 2rem;
+    color: #353b4b;
+}
+.list_tips .icon{
+    padding-right: .35rem;
+}
 
 /*END 表单列表*/
 
@@ -509,12 +517,70 @@ dl.common_list,dl.form_list{
 }
 /*END 生产单*/
 
-.list_tips{
-    text-align: center;
+/*个人中心*/
+.user-info .user-basic {
+    position: relative;
+    width: 100%;
+    height: 7.4rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    z-index: 2;
+}
+.user-info .user-avatar {
+    position: absolute;
+    z-index: 3;
+    left: .5rem;
+    top: 2.2rem;
+    height: 3.4rem;
+    border-radius: 3.4rem;
+    -webkit-box-shadow: 0 1px 0 1px #fff;
+    box-shadow: 0 1px 0 1px #fff;
+}
+.user-info .user-basic .user-name,.user-info .user-basic .user-number {
+    margin-left: 4.4rem;
+    padding-top: 2.8rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: inline-block;
+}
+.user-info .user-basic .user-number{
+    margin-left: 0;
+    font-size: .55rem;
+}
+.f-section {
+    margin-bottom: .5rem;
+    background-color: #fff;
+}
+.slide-link {
+    position: relative;
+    display: block;
+    padding: .575rem 7% .575rem .5rem;
+    border-bottom: .05rem solid rgb(246,246,246);
+    background: url(../images/rightarrow_new.png) no-repeat 96% center;
+    background-size: .325rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1.1rem;
     font-size: .7rem;
-    margin-top: 2rem;
-    color: #353b4b;
+    color: #4d525d !important;
 }
-.list_tips .icon{
-    padding-right: .35rem;
+.slide-link em {
+    float: right;
+    display: inline-block;
+    font-size: .55rem;
+    font-style: normal;
+    color: #999;
 }
+.slide-link span {
+    float: left;
+    height: 1.1rem;
+    width: 1.1rem;
+    text-align: center;
+    line-height: 1.1rem;
+    margin-right: .25rem;
+    background-color: #009a44;
+    color: #fff;
+    border-radius: .3rem;
+}
+/*END 个人中心*/
