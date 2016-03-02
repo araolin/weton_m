@@ -35,9 +35,20 @@
             <label class="fl">客户名称</label>
             <span class="fr">徐经理</span>
         </dd>
+    </dl>
+    <dl class="common_list">
+        <dt id="dt_menu">报价单-<em id="dt_menu_text">产品一</em><i class="icon">&#xe642;</i></dt>
+        <div class="dt_menu">
+            <ul>
+                <li>产品一</li>
+                <li>产品二</li>
+            </ul>
+        </div>
+    </dl>
+    <dl class="common_list dl_detail" id="dl_1">
         <dd class="clear">
             <label class="fl">产品品名</label>
-            <span class="fr">三四十</span>
+            <span class="fr">产品一</span>
         </dd>
         <dd class="clear">
             <label class="fl">产品规格</label>
@@ -103,6 +114,78 @@
             <label class="fl">备注</label>
             <span class="fr"></span>
         </dd>
+    </dl>
+    <dl class="common_list dl_detail" id="dl_2">
+        <dd class="clear">
+            <label class="fl">产品品名</label>
+            <span class="fr">产品二</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">产品规格</label>
+            <span class="fr">1111111g</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">产品订量</label>
+            <span class="fr">1000</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">产品报价</label>
+            <span class="fr">烫金丝印粘盒包装</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">工艺描述</label>
+            <span class="fr">烫金丝印粘盒包装</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">合计</label>
+            <span class="fr">1111.00元</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">备注</label>
+            <span class="fr">烫金丝印粘盒包装</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">产品报价</label>
+            <span class="fr">烫金丝印粘盒包装</span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">料价</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">烫金</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">刀模</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">工钱</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">丝印</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">印刷</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">光油</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">合计</label>
+            <span class="fr"></span>
+        </dd>
+        <dd class="clear">
+            <label class="fl">备注</label>
+            <span class="fr"></span>
+        </dd>
+    </dl>
+    <dl class="common_list">
         <div class="comm_btn">
             <a href="javascript:;">编&nbsp;&nbsp;&nbsp;&nbsp;辑</a>
         </div>
@@ -111,6 +194,30 @@
         </div>
     </dl>
 </section>
+<script type="text/javascript">
+    $(function(){
+        $(".dt_menu").hide();
+        $(".dl_detail").hide();
+        $("#dl_1").show();
+        $("#dt_menu").click(function(){
+            if($(".dt_menu").is(':hidden')){
+                $(".dt_menu").slideDown();
+                $("#dt_menu .icon").html('&#xe643;');
+            }else{
+                $(".dt_menu").slideUp();
+                $("#dt_menu .icon").html('&#xe642;');
+            }
+        });
+        $(".dt_menu li").click(function(){
+            $(".dl_detail").hide();
+            var dl_index = "#dl_"+($(this).index()+1);
+            $(dl_index).show();
+            $("#dt_menu_text").text($(this).text());
+            $(".dt_menu").slideUp();
+            $("#dt_menu .icon").html('&#xe642;');
+        })
+    })
+</script>
 <div style="height: 4rem;"></div>
 <!-- 底部菜单 -->
 <section class="menu">
