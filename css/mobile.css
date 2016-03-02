@@ -462,6 +462,10 @@ dl.common_list,dl.form_list{
 .quotation td a{
     font-size: .7rem!important;
 }
+.p_save_btn{
+    width: 50%;
+    margin: 0 auto;
+}
 /*END 报价单*/
 
 /*生产单*/
