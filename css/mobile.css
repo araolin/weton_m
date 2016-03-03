@@ -615,3 +615,55 @@ dl.common_list,dl.form_list{
     color: #8a8f93;
 }
 /*END 消息中心*/
+
+.sort_box{
+    width: 100%;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+.sort_list{
+    padding:.5rem 3rem .5rem 0;
+    position: relative;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: .7rem;
+    border-bottom:.05rem solid #ddd;
+}
+
+.sort_list .num_tel{
+    font-size: 1rem;
+    overflow: hidden;
+    position: absolute;
+    line-height: 2rem;
+    top:.25rem;
+    right: 1rem;
+    color:#5fbd21;
+}
+.sort_list .num_name{
+    color: #000;
+}
+
+.sort_letter{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    color:#787878;
+    font-size: .7rem;
+    border-bottom:.05rem solid #ddd;
+    background-color: #e0e0e0;
+}
+.initials{
+    position: fixed;
+    top: 2rem;
+    right: 0;
+    height: 100%;
+    width: .75rem;
+    padding-right: .5rem;
+    text-align: center;
+    font-size: 12px;
+    z-index: 99;
+    background: rgba(145,145,145,0);
+}
+.initials li img{
+    width: 14px;
+}
