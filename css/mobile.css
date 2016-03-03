@@ -616,6 +616,28 @@ dl.common_list,dl.form_list{
 }
 /*END 消息中心*/
 
+#letter{
+    width: 5rem;
+    height: 5rem;
+    border-radius: .25rem;
+    font-size: 3.25rem;
+    color: #555;
+    text-align: center;
+    line-height: 5rem;
+    background: rgba(145,145,145,0.6);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin:-2.5rem 0 0 -2.5rem;
+    z-index: 99;
+    display: none;
+}
+#letter img{
+    width: 2.5rem;
+    height: 2.5rem;
+    float: left;
+    margin:1.25rem 0 0 1.25rem;
+}
 .sort_box{
     width: 100%;
     padding-top: 1rem;
