@@ -587,3 +587,31 @@ dl.common_list,dl.form_list{
     border-radius: .3rem;
 }
 /*END 个人中心*/
+
+/*消息中心*/
+.news_item{
+    background-color: #fff;
+    border: .05rem solid #e3e3e3;
+    padding: .5rem;
+}
+.news_item_h h3{
+    font-size: .8rem;
+}
+.news_item_h p{
+    font-size: .6rem;
+    color: #8a8f93;
+}
+.news_item_m{
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: .05rem dotted #ededed;
+}
+.news_item_info{
+    margin-top: .5rem;
+    font-size: .6rem;
+}
+.news_item_info span{
+    color: #8a8f93;
+}
+/*END 消息中心*/
