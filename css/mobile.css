@@ -689,3 +689,44 @@ dl.common_list,dl.form_list{
 .initials li img{
     width: 14px;
 }
+
+span.select2{
+    color: #686868;
+    display: inline-block;
+    float: left;
+    font-size: .75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 0 0 .5rem;
+    width: 55%;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+span.selection{
+    color: #686868;
+    display: inline-block;
+    float: left;
+    font-size: .75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+span.select2-account-container{
+    width: 100%;
+    text-align: left;
+}
+span.select2-selection{
+    border:none;
+}
+span#select2-account-container{
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+span.select2-selection__arrow{
+    height: 1.5rem;
+}
+.select2-results__options{
+    font-size: .7rem;
+}
