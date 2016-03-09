@@ -288,7 +288,7 @@ html,body{font-size:20px;}
     font-size: .55rem;
     text-align: center
 }
-.index-nav li .badge{
+.index-nav li .badge,.menu .badge{
     position: absolute;
     top: .5rem;
     right: 22%;
@@ -301,6 +301,9 @@ html,body{font-size:20px;}
     line-height: .8rem;
     font-size: .6rem;
     color: #fff;
+}
+.menu .badge{
+    top: .25rem;
 }
 /* END 首页功能区 */
 
