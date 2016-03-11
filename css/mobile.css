@@ -606,9 +606,16 @@ dl.common_list,dl.form_list{
 }
 .news_item_m{
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     padding: 2rem 0;
     border-bottom: .05rem dotted #ededed;
+}
+.news_item_m span{
+    color: #8a8f93;
+    text-align: right;
+    width: 8rem;
+    float: left;
+    padding-right: .5rem;
 }
 .news_item_info{
     margin-top: .5rem;
